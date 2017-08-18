@@ -270,7 +270,7 @@
     <hr>
 </div>
 
-<div class="btn-top text-center"><i class="fa fa-chevron-up fa-2x"></i></div>
+
 
 <?php require ('footer.html');?>
 </body>
