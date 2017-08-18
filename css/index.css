@@ -13,6 +13,11 @@
 }
 .sanphamnoibat{
     text-align: center;
+    display: inline-block;
+}
+.sanphamnoibat .bx-wrapper{
+    border-left: none;
+    border-right:none;
 }
 .customer,.brand{
     width: 100%;
