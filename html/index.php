@@ -38,7 +38,7 @@
 </div>
 
 <h2 class="font-lobster text-center color-title">SẢN PHẨM NỔI BẬT </h2>
-<div class="container-fruid">
+<div class="container-fruid text-center">
     <div class="sanphamnoibat">
         <div class="slide-sanphamnoibat">
             <div class="slider hvr-buzz">
@@ -63,7 +63,7 @@
 </div>
 
 <h2 class="font-lobster text-center"><a href="#">ĐỒNG HỒ NAM</a> </h2>
-<div class="container-fruid">
+<div class="container-fruid text-center">
     <div class="sanphamnoibat">
         <div class="slide-sanphamnoibat">
             <div class="slider hvr-buzz">
@@ -173,7 +173,7 @@
 </div>
 
 <h2 class="font-lobster text-center"><a href="#">ĐỒNG HỒ NỮ</a> </h2>
-<div class="container-fruid">
+<div class=" container-fruid text-center">
     <div class="sanphamnoibat">
         <div class="slide-sanphamnoibat">
             <div class="slider hvr-buzz">
@@ -198,7 +198,7 @@
 </div>
 
 <h2 class="font-lobster text-center"><a href="#">ĐỒNG HỒ ĐÔI</a> </h2>
-<div class="container-fruid">
+<div class="container-fruid text-center">
     <div class="sanphamnoibat">
         <div class="slide-sanphamnoibat">
             <div class="slider hvr-buzz">
