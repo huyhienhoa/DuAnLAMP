@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link type="text/css" rel="stylesheet" href="../css/trangchitiet.css">
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/jquery.bxslider.css"
 </head>
 <body>
 <?php require('header.html'); ?>
@@ -66,14 +67,16 @@
                                 <p class="text-center">Đặt Hàng Ngay</p>
                                 <p class="text-center">Để lại số điện thoại, chúng tôi sẽ gọi lại ngay</p>
                             </div>
-                            <form class="form-inline">
-                                <div class="form-group">
-                                    <label class="sr-only" for="sdt">Số Điện Thoại</label>
-                                    <input class="form-control" style="width: 420px" type="text" name="sdt" id="sdt" placeholder="Nhập số điện thoại để đặt hàng trước">
-                                </div>
-                                <div class="form-group">
-                                    <label class="sr-only" for="nhapsdt">Gửi Sđt</label>
-                                    <button type = "submit" class = "btn btn-default btn-lg" id="nhapsdt" ><strong>Gửi</strong></button>
+                            <form>
+                                <div class="form-group row">
+                                    <div class="col-sm-10">
+                                        <label class="sr-only" for="sdt">Số Điện Thoại</label>
+                                        <input class="form-control" type="text" name="sdt" id="sdt" placeholder="Nhập số điện thoại để đặt hàng trước">
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <label class="sr-only" for="nhapsdt">Gửi Sđt</label>
+                                        <button type = "submit" class = "btn btn-default btn-lg" id="nhapsdt" ><strong>Gửi</strong></button>
+                                    </div>
                                 </div>
                             </form>
                         </div>
