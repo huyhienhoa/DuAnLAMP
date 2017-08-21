@@ -38,7 +38,7 @@
 </div>
 
 <h2 class="font-lobster text-center color-title">SẢN PHẨM NỔI BẬT </h2>
-<div class="container-fruid">
+<div class="container-fruid text-center">
     <div class="sanphamnoibat">
         <div class="slide-sanphamnoibat">
             <div class="slider hvr-buzz">
@@ -63,7 +63,7 @@
 </div>
 
 <h2 class="font-lobster text-center"><a href="#">ĐỒNG HỒ NAM</a> </h2>
-<div class="container-fruid">
+<div class="container-fruid text-center">
     <div class="sanphamnoibat">
         <div class="slide-sanphamnoibat">
             <div class="slider hvr-buzz">
@@ -173,7 +173,7 @@
 </div>
 
 <h2 class="font-lobster text-center"><a href="#">ĐỒNG HỒ NỮ</a> </h2>
-<div class="container-fruid">
+<div class=" container-fruid text-center">
     <div class="sanphamnoibat">
         <div class="slide-sanphamnoibat">
             <div class="slider hvr-buzz">
@@ -198,7 +198,7 @@
 </div>
 
 <h2 class="font-lobster text-center"><a href="#">ĐỒNG HỒ ĐÔI</a> </h2>
-<div class="container-fruid">
+<div class="container-fruid text-center">
     <div class="sanphamnoibat">
         <div class="slide-sanphamnoibat">
             <div class="slider hvr-buzz">
@@ -271,7 +271,6 @@
 </div>
 
 <div class="btn-top text-center"><i class="fa fa-chevron-up fa-2x"></i></div>
-
 <?php require ('footer.html');?>
 </body>
 </html>
