@@ -11,13 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('demo',function () {
-   return 'Đây là demo đầu tiên';
-});
+
+Route::get('product','HomeController@product');
 
 Route::get("demo1","HomeController@getFirst");
 
