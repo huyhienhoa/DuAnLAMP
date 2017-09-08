@@ -14,7 +14,7 @@ class CreateProductsTable extends Migration
     public function up()
     {
         Schema::create('products', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->increments('id');
             $table->integer('quantity');
             $table->char('name', 50);
             $table->enum('status',['còn hàng','hết hàng']);
@@ -28,6 +28,9 @@ class CreateProductsTable extends Migration
             $table->foreign('branch_id')->references('id')->on('branches');
             $table->timestamps();
         });
+        Schema::table('products', function($table) {
+            $table->double('cost');
+        });
     }
 
     /**
@@ -38,5 +41,8 @@ class CreateProductsTable extends Migration
     public function down()
     {
         Schema::dropIfExists('products');
+        Schema::table('products', function($table) {
+            $table->dropColumm('cost');
+        });
     }
 }

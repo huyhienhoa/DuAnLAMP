@@ -11,15 +11,10 @@
 |
 */
 
+Auth::routes();
+                
+Route::get('product','ProductController@listProduct')->name('products');
 
+Route::get('/add','ProductController@showAddForm')->name('showAddForm');
 
-Route::get('product','HomeController@product');
-
-Route::get("demo1","HomeController@getFirst");
-
-Route::get('/san-pham/{name}/{id}', function ($name,$id){
-    echo "Bạn đang xem sản phẩm ".$name." có ID là ".$id;
-})->where(array('name' => '[a-z]+','id' => '[0-9]+'));
-
-
-Route::get('test','HomeController@test');
+Route::post('/add','HomeController@createProduct');
