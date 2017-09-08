@@ -21,12 +21,13 @@ class ProductController extends Controller
     }
     
     
+    
     public function createProduct(Request $request){
         $product = new Product();
         $product->name = $request->input('name');
         $product->cost = $request->input('cost');
         $product->quantity = $request->input('quantity');
-        $product->status = $request->input('status');
+        $product->status = $request->input('hot');
         $product->category_id = $request->input('category');
         $product->branch_id = $request->input('branch');
         $product->hot = $request->input('hot');
@@ -35,6 +36,19 @@ class ProductController extends Controller
         $product->description = $request->input('description');
         $product->save();
         return redirect()->action('ProductController@listProduct');
+    }
+
+    public function fileUpload(Request $request){
+        $this->validate($request,['input_img' => 'required|image|mimes:jpeg,png,jpg,gif,svg']);
+        
+        if($request->hasFile('input_img')){
+            $image = $request->file('input_img');
+            $name = time().'.'.$image->getClientOriginalExtension();
+            $path = public_path().'/images/';
+            $image->move($path,$name);
+
+
+        }
     }
 
 }

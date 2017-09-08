@@ -16,9 +16,5 @@ class Product extends Model
         return $this->belongsTo('App\Branch');
     }
 
-    public function createProduct(Request $request){
-        $product = new Product();
-        $product->name = $request->input("name");
-        $product->quantity = $request->input('quantity');
-    }
+    
 }

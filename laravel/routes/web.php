@@ -17,4 +17,5 @@ Route::get('product','ProductController@listProduct')->name('products');
 
 Route::get('/add','ProductController@showAddForm')->name('showAddForm');
 
-Route::post('/add','HomeController@createProduct');
+Route::post('/add','ProductController@createProduct');
+Route::post('/add','ProductController@fileUpload');
